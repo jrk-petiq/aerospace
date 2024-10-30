@@ -105,7 +105,7 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
+alt-1 = 'workspace 1' # for Terminal (new config)
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
@@ -124,8 +124,9 @@ alt-t = 'workspace T' # for Terminal
 alt-v = 'workspace V' # for Video Editing
 alt-w = 'workspace W' # for Web Browser
 
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-1 = 'move-node-to-workspace 1' # for Terminal (new config)
 alt-shift-2 = 'move-node-to-workspace 2'
 alt-shift-3 = 'move-node-to-workspace 3'
 alt-shift-4 = 'move-node-to-workspace 4'
@@ -189,7 +190,7 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-1 = '^built-in retina display$' # Monitor sequence number from left to right. 1-based indexing
+4 = '^built-in retina display$' # Monitor sequence number from left to right. 1-based indexing
 2 = 1                           # Main monitor
 3 = 3                           # Non-main monitor in case when there are only two monitors
 
@@ -211,7 +212,7 @@ run = "move-node-to-workspace C"
 
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
-run = "move-node-to-workspace T"
+run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
